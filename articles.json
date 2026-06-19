@@ -1,0 +1,31 @@
+[
+    {
+        "page_link": "articles_pages\\article_template.html",
+        "page_kpts": "salt\\salt_kpts.html",
+        "page_sources": "articles_pages\\article_template.html",
+        "article_name": "Salt",
+        "children":[]
+    },
+    {
+        "page_link": "articles_pages\\article_template.html",
+        "page_kpts": "salt\\salt_kpts.html",
+        "page_sources": "salt\\salt_sources.html",
+        "article_name": "Gluten", 
+        "children": [
+             {
+                "page_link": "articles_pages\\article_template.html",
+                "page_kpts": "salt\\salt_kpts.html",
+                "page_sources": "salt\\salt_sources.html",
+                "article_name": "Gliadins",
+                "children":[]
+            },
+            {
+                "page_link": "articles_pages\\article_template.html",
+                "page_kpts": "salt\\salt_kpts.html",
+                "page_sources": "salt\\salt_sources.html",
+                "article_name": "Glutenins",
+                "children":[]
+            }
+        ]        
+    }
+]

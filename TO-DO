@@ -1,0 +1,27 @@
+TODO: 
+* finish writing salt article
+* create salt article mk
+* create salt article sources mk
+* create salt article kpts mk
+* buy domain cookerymadeeasy.org
+* put code on github
+* link github to cloudfare
+* finish hosting blog online with domain, github and cloudfare
+
+* center search bar
+* put search bar on the very right
+* center HOME/ARTICLES/ABOUT
+
+
+
+
+DONE:
+* create an index from a json 
+* make header/top navigation bar in one file and just call for it
+* add searchbar to navigation bar
+* make searchbar functional
+* find out how to resize an image so it is properly centered + dynamic
+* added tab icon
+* make iframe dynamic
+* make it so index can have nested articles
+* adapt navbar.js to insert the head into all pages?

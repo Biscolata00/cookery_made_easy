@@ -1,0 +1,155 @@
+:root { /*variables*/
+  --font-size-navbar: 20px;
+  --font-size-navbar-title: 16px;
+}
+
+
+
+
+.topbar{ /*main topbar container*/
+    display: grid;
+    grid-template-columns: 100px 1.5fr 2fr;
+    grid-template-rows: 1;
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-bottom: 3em;
+    justify-content: center;
+}
+
+
+/* NAV BAR*/
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    gap: 3em;
+}
+
+.navbar a{
+    color: rgb(71, 42, 15);
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover:not(.logo){
+    transform: translate(0%, -5%);
+    color: var(--hover-color);
+}
+.navbar li{
+    float: left;
+    font-size: var(--font-size-navbar);
+}
+
+/*[aria-current="page"] {
+  text-shadow:0px 0px 1px black;
+}*/
+
+.active { 
+  text-shadow:0px 0px 1px black; 
+}
+
+.name{
+    font-size: var(--font-size-navbar-title);
+    white-space: nowrap;
+}
+
+.navbar input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+/* ARTICLE TABS*/
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #d4ddc5;
+  display:inline-block;
+  margin-left: 1.5em;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  /*background-color: #ddd;*/
+  transform: translate(0%, -5%);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  /*background-color: #ccc;*/
+  /*font-weight: bold;*/
+  text-shadow:0px 0px 1px black;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
+
+/* iframe */
+.tabcontent iframe {
+  border-style: none;
+  min-height: 500px; /* necessary to display content in not opened by default tabs*/
+  width: 95vw;
+  height: 0vh;
+  border: none;
+  overflow:hidden;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+/*footer*/
+.footer {
+  display: grid;
+  justify-content: center;
+  background-color: #d4ddc5;
+  padding: 10px;
+}
+
+.img_footer {
+  height: auto; 
+  width: auto; 
+  max-width: 30px; 
+  max-height: 30px;
+}
+
+/*article title*/
+#article_title {
+  display: grid;
+  justify-content: center;
+  font-family: "Aclonica"
+}
+
+h2 {
+  font-family: "Arial"
+}
+
+/*index*/
+
+.article_title {
+	display: inline-block;
+	margin-left: 2em;
+}
+
+.sub_article_title {
+	display: inline-block;
+	margin-left: 3em;
+}
+

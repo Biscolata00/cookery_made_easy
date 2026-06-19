@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="..//styles.css" rel="stylesheet">
+        <script src="..//script.js"></script>
+        <script src="..//navbar_and_basics.js"></script>
+        <script src="..//pagefind/pagefind-component-ui.js" type="module"></script>
+  
+        <script>
+        function resizeIframe(obj) {
+        obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+        }
+        </script>
+
+        <title>Salt</title>
+    </head>
+
+    <body>
+    <div class = "page">
+
+        <div id="article_title"  data-pagefind-body>
+            <h2>
+                SALT
+            </h2>
+        </div>
+
+        <div class="tab" id="tabs">
+            <button class="tablinks" onclick="openContent(event, 'article')" id="defaultOpen">Article</button>
+            <button class="tablinks" onclick="openContent(event, 'keypoints')" >Key points</button>
+            <button class="tablinks" onclick="openContent(event, 'sources')">Sources</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="article" class="tabcontent">
+            <iframe src="..\articles_content\salt\salt.html" 
+            onload="resizeIframe(this)" 
+            title="Salt"></iframe>
+        </div>
+
+        <div id="keypoints" class="tabcontent">
+            <iframe src="..//articles_content/salt/salt_kpts.html" 
+            onload="resizeIframe(this)" 
+            title="Salt"></iframe>
+        </div>
+
+        <div id="sources" class="tabcontent">
+            <iframe src="..//articles_content/salt/salt_sources.html" 
+            onload="resizeIframe(this)" 
+            title="Salt"></iframe>
+        </div> 
+        <!--end tabs content-->  
+
+
+    </div>  <!--end page-->  
+    </body>
+
+        
+</html>
