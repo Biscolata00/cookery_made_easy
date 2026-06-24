@@ -1,66 +1,118 @@
 :root { /*variables*/
   --font-size-navbar: 20px;
   --font-size-navbar-title: 16px;
+  --hover-color: #adbb97;
+  --tab-color: rgb(65, 35, 11);
+  --move-up-on-hover: translate(0%, -5%);
+  
 }
 
 
-
-
-.topbar{ /*main topbar container*/
-    display: grid;
+/* .topbar{ /*main topbar container
+    display: grid; 
     grid-template-columns: 100px 1.5fr 2fr;
-    grid-template-rows: 1;
+    grid-template-rows: 1;  
     padding-top: 1em;
     padding-right: 1em;
     padding-left: 1em;
-    padding-bottom: 3em;
-    justify-content: center;
-}
+    padding-bottom: 3em; 
+    justify-content: center; 
+} */
 
 
 /* NAV BAR*/
+/*Parent*/
+.topbar{ /*main topbar container*/
+    display: flex;
+    border: 5px solid rgba(0, 0, 0, 0.247); /*for debugging*/
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*Children*/
+.navbar{
+  border: 3px solid rgba(0, 0, 255, 0.308); /*for debugging*/
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+    align-items: center;
+}
+
+#searchbar{
+  margin-left: auto
+}
+
+.name{
+  border: 3px solid rgba(0, 128, 0, 0.404); /*for debugging*/
+  flex-shrink: 5;
+}
+
+.name h1{
+  font-size: 200%;
+}
+
+/*dynamically hide website name if on a narrow screen*/
+@media(max-width: 575px){
+  .name {
+     display:none
+  }
+}
+
+.logo{
+  border: 3px solid rgba(88, 4, 4, 0.322); /*for debugging*/
+}
+
+/*Grandchildren*/
+.search_bar{
+  border: 2px solid rgb(8, 155, 20); /*for debugging*/
+}
+
+.main_tabs{
+  border: 2px solid pink; /*for debugging*/
+}
+
 .navbar ul{
     display: flex;
-    list-style-type: none;
+    list-style-type: none; /*remove list points*/
     gap: 3em;
 }
 
 .navbar a{
-    color: rgb(71, 42, 15);
-    text-decoration: none;
-    padding: 20px;
-    display: block;
+    color: var(--tab-color);
+    text-decoration: none; /*remove underline*/
+    padding: 20px; 
+    /* display: block; */
+    display: flex; 
     text-align: center;
 }
+
+/*move hovered tab up + color*/
 .navbar a:hover:not(.logo){
-    transform: translate(0%, -5%);
+    transform: var(--move-up-on-hover);
     color: var(--hover-color);
-}
-.navbar li{
-    float: left;
     font-size: var(--font-size-navbar);
 }
 
-/*[aria-current="page"] {
-  text-shadow:0px 0px 1px black;
-}*/
+/*decide font size tabs*/
+.navbar li{
+    font-size: var(--font-size-navbar);
+} 
 
-.active { 
+/*currently not working, meant to show which tab you're on*/
+/* .active { 
   text-shadow:0px 0px 1px black; 
-}
+} */
 
-.name{
-    font-size: var(--font-size-navbar-title);
-    white-space: nowrap;
-}
-
-.navbar input[type=text] {
+/* .navbar input[type=text] {
   float: right;
   padding: 6px;
   margin-top: 8px;
   margin-right: 16px;
   font-size: 17px;
-}
+} */
+
+
 
 /* ARTICLE TABS*/
 /* Style the tab */

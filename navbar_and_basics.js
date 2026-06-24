@@ -90,32 +90,61 @@ const nesting = getNestingString();
 
 
 // elements to add
-const headerEl = `
-  <div class = "topbar">
+const headerEl2 = `
+        <div class = "topbar">
             <div class = "logo">
                 <a href="${nesting}/home.html"><img src="${nesting}/images/logo.png" alt="cookery made easy logo" style="width:70px;height:70px;"></a>
             </div>
+
             <div class = "name">
                 <h1>Cookery Made Easy</h1>
             </div>
+            
             <div class="navbar">
             <nav>
                 <ul> 
-                    <li><a href="${nesting}/home.html">Home</a></li>
-                    <li><a href="${nesting}/all_articles.html">Articles</a></li>
-                    <li><a href="${nesting}/about.html">About</a></li>
+                    <li class="main_tabs"><a href="${nesting}/home.html">Home</a></li>
+                    <li class="main_tabs"><a href="${nesting}/all_articles.html">Articles</a></li>
+                    <li class="main_tabs"><a href="${nesting}/about.html">About</a></li>
                     
                     <br>
 
                     <!-- pagefind (search bar) https://pagefind.app/docs/ -->
-                    <li><pagefind-modal-trigger></pagefind-modal-trigger></li>
+                    <li class="search_bar"><pagefind-modal-trigger></pagefind-modal-trigger></li>
                     <li><pagefind-modal></pagefind-modal></li>
-                </ul>
-                
+                </ul>                
             </nav>
             </div> 
         </div>
 `;
+
+const headerEl = `
+        <div class = "topbar">
+            <div class = "logo" id="logo">
+                <a href="${nesting}/home.html"><img src="${nesting}/images/logo.png" alt="cookery made easy logo" style="width:70px;height:70px;"></a>
+            </div>
+
+            <div class="name" id="name">
+                <h1>Cookery Made Easy</h1>
+            </div>
+            
+            <div class="navbar">
+                <ul> 
+                    <li class="main_tabs"><a href="${nesting}/home.html">Home</a></li>
+                    <li class="main_tabs"><a href="${nesting}/all_articles.html">Articles</a></li>
+                    <li class="main_tabs"><a href="${nesting}/about.html">About</a></li>
+                </ul>
+            </div>    
+
+            <div class="searchbar" id="searchbar"> <!-- pagefind (search bar) https://pagefind.app/docs/ -->
+                <pagefind-modal-trigger></pagefind-modal-trigger>
+                <pagefind-modal></pagefind-modal>
+            </div> 
+          
+
+        </div>
+`;
+
 
 // Insert your footer HTML inside these ``. You can use HTML as usual.
 // Remove all the content inside the `` if you don't have a footer.
