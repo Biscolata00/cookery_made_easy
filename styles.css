@@ -3,14 +3,28 @@
   --font-size-navbar-title: 16px;
   --hover-color: #adbb97;
   --tab-color: rgb(65, 35, 11);
-  --move-up-on-hover: translate(0%, -5%);  
+  --move-up-on-hover: translate(0%, -5%); 
+  --footer-color: #d4ddc5; 
+}
+
+/*for debugging divs*/
+/*border: 3px solid rgba(0, 0, 0, 0.247);*/
+
+
+
+body div:not(.footer){
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+
+.topbar{
+  padding-top: 1em;
 }
 
 /* NAV BAR*/
 /*Parent*/
 .topbar{ /*main topbar container*/
     display: flex;
-    /*border: 5px solid rgba(0, 0, 0, 0.247); /*for debugging*/
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
@@ -22,7 +36,6 @@
 
 /*NAVBAR*/
 .navbar{
-  /*border: 3px solid rgb(0, 0, 255); /*for debugging*/
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -60,9 +73,10 @@
 .searchbar{
   /*border: 2px solid rgb(8, 155, 20); /*for debugging*/
   width: 20%;
+  min-width: 250px;
 }
 
-@media(min-width: 1000px){
+@media(min-width: 992px){
   #searchbar {
      margin-left: auto;
      padding-right: 20px;
@@ -86,11 +100,6 @@
      display:none
   }
 }
-
-/*.logo{
-  /*border: 3px solid rgba(88, 4, 4, 0.322); /*for debugging
-}*/
-
 
 /*currently not working, meant to show which tab you're on*/
 /* .active { 
@@ -172,11 +181,20 @@ dd{
 }
 
 /*FOOTER*/
+body{ /*set the body to take minimum the whole page*/
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+
 .footer {
   display: grid;
   justify-content: center;
-  background-color: #d4ddc5;
-  padding: 10px;
+  background-color: var(--footer-color);
+  padding: 10px 0px 10px 0px; /*top, right, bottom, left*/
+  margin-top: auto; /*footer is part of the body, and always sits at the bottom*/
 }
 
 .img_footer {
@@ -185,6 +203,9 @@ dd{
   max-width: 30px; 
   max-height: 30px;
 }
+
+
+
 
 /*article title*/
 #article_title {
@@ -197,7 +218,7 @@ h2 {
   font-family: "Arial"
 }
 
-/*index*/
+/*INDEX*/
 
 .article_title {
 	display: inline-block;

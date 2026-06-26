@@ -1,6 +1,10 @@
+
 // from https://petrapixel.neocities.org/coding/layout-base-code
 // initLayout() is called once the DOM (the HTML content of your website) has been loaded.
 document.addEventListener("DOMContentLoaded", function () {
+  
+  // var testID = document.getElementById("test");
+
   // The layout will be loaded on all pages that do NOT have the "no-layout" class in the <body> element.
   if (!document.body.classList.contains("no-layout")) {
     // Inserting your header and footer:
@@ -132,8 +136,7 @@ const footerEl = `
 
 // Insert your sidebar HTML inside these ``. You can use HTML as usual.
 // Remove all the content inside the `` if you don't have a sidebar.
-const sidebarEl1 = `
-	
+const sidebarEl1 = `	
 `;
 
 // Insert your sidebar HTML inside these ``. You can use HTML as usual.

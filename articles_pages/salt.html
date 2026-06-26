@@ -6,17 +6,17 @@
         <script src="..//navbar_and_basics.js"></script>
         <script src="..//pagefind/pagefind-component-ui.js" type="module"></script>
   
-        <script>
+        <!-- <script>
         function resizeIframe(obj) {
         obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
         }
-        </script>
+        </script> -->
 
         <title>Salt</title>
     </head>
 
     <body>
-    <div class = "page">
+    <div class="page">
 
         <div id="article_title"  data-pagefind-body>
             <h2>
@@ -39,7 +39,7 @@
 
         <div id="keypoints" class="tabcontent">
             <iframe src="..//articles_content/salt/salt_kpts.html" 
-            onload="resizeIframe(this)" 
+            onclick="resizeIframe(this)" 
             title="Salt"></iframe>
         </div>
 

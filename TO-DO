@@ -6,6 +6,8 @@ TODO:
 * link github to cloudfare
 * finish hosting blog online with domain, github and cloudfare
 
+*tabs no scrolling applied to all, not just default
+
 
 DONE:
 * create an index from a json 
@@ -24,3 +26,4 @@ DONE:
 * make it phone friendly / dynamic
 * create salt article sources mk
 * make searchbar longer
+* sticky footer

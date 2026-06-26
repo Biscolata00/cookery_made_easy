@@ -1,3 +1,9 @@
+// prevent scrollbar of the iframe
+function resizeIframe(obj) {
+        obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+}
+
+// open only one tab at a time
 function openContent(evt, contentPart) { // https://www.w3schools.com/howto/howto_js_tabs.asp
   // Declare all variables
   var i, tabcontent, tablinks;
@@ -17,13 +23,13 @@ function openContent(evt, contentPart) { // https://www.w3schools.com/howto/howt
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(contentPart).style.display = "block";
   evt.currentTarget.className += " active";
-  
 } 
 
 // open a tab by default once the content has finished loading
 window.addEventListener("DOMContentLoaded", function() { // https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
   document.getElementById("defaultOpen").click();
 });
+
 
 
 
@@ -72,4 +78,21 @@ fetch("articles.json")
     );
   }
 );
+
+
+
+// when the page load, activate the sticky footer
+window.addEventListener("load", activateStickyFooter);
+
+function activateStickyFooter() {
+  // need to adjust the footer top when the page just loads
+  // because the footer may not be sticky
+  adjustFooterCssTopToSticky();
+  
+  // whenever the window is resized, we need to re-adjust the
+  // footer top to update its position
+  window.addEventListener("resize", adjustFooterCssTopToSticky);
+}
+
+
 
