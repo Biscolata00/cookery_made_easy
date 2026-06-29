@@ -3,8 +3,8 @@ TODO:
 * index on google
 * publish article salt html
 * add an icon for mobile tab
+* prevent website url from showing .html
 
-*CHECK
 
 DONE:
 * create an index from a json 
@@ -30,3 +30,4 @@ DONE:
 *tabs no scrolling applied to all, not just default
 * link github to cloudfare
 * finish hosting blog online with domain, github and cloudfare
+* understand why local and online versions are different -> need to clear cache with Ctrl + Shift + Delete
