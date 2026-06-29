@@ -97,7 +97,7 @@ const nesting = getNestingString();
 const headerEl = `
         <div class = "topbar">
             <div class = "logo" id="logo">
-                <a href="${nesting}/home.html"><img src="${nesting}/images/logo.png" alt="cookery made easy logo" style="width:70px;height:70px;"></a>
+                <a href="${nesting}/index.html"><img src="${nesting}/images/logo.png" alt="cookery made easy logo" style="width:70px;height:70px;"></a>
             </div>
 
             <div class="name" id="name">
@@ -106,7 +106,7 @@ const headerEl = `
             
             <div class="navbar">
                 <ul> 
-                    <li class="main_tabs"><a href="${nesting}/home.html">Home</a></li>
+                    <li class="main_tabs"><a href="${nesting}/index.html">Home</a></li>
                     <li class="main_tabs"><a href="${nesting}/all_articles.html">Articles</a></li>
                     <li class="main_tabs"><a href="${nesting}/about.html">About</a></li>
                 </ul>

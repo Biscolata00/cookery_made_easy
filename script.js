@@ -32,12 +32,10 @@ function openContent(evt, contentPart) { // https://www.w3schools.com/howto/howt
   document.getElementById(contentPart).style.display = "block";
   evt.currentTarget.className += " active";
  
-  var myIframe = document.getElementById(contentPart);
-    
+    var myIframe = document.getElementById("keypoints_iframe");
     console.log("CHECK BELOW 1")
     console.log(myIframe)
-    console.log("CHECK BELOW 2")
-    resizeIframe("sources")
+    resizeIframe(myIframe)
 
     // myIframe.contentDocument = undefined
     // myIframe.contentWindow.document = nothing showing at all
