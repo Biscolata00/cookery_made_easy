@@ -32,31 +32,17 @@ function openContent(evt, contentPart) { // https://www.w3schools.com/howto/howt
   document.getElementById(contentPart).style.display = "block";
   evt.currentTarget.className += " active";
  
-    var myIframe = document.getElementById("keypoints_iframe");
-    console.log("CHECK BELOW 1")
-    console.log(myIframe)
-    resizeIframe(myIframe)
-
-    // myIframe.contentDocument = undefined
-    // myIframe.contentWindow.document = nothing showing at all
-
-
-  resizeIframe(myIframe);
-  //var iframeContent = document.getElementById(contentPart).contentWindow; //.contentWindow.document.documentElement;
-  // window.addEventListener("DOMContentLoaded", function() {
-  //   alert("ZE")
-  //   var iframe = document.getElementById(contentPart);
-  //   console.log(iframe)
-  //   //var iframeContent = iframe.contentDocument || iframe.contentWindow.document;
-  //   // var iframeContent = document.getElementById(contentPart).contentWindow.document.body.innerHTML;
-  //   // alert("ZE")
-  //   resizeIframe(iframeContent);
-//   });
+  var iframeName = contentPart + "_iframe"
+  var myIframe = document.getElementById(iframeName);
+  resizeIframe(myIframe)
 } 
 
 // open a tab by default once the content has finished loading
 window.addEventListener("DOMContentLoaded", function() { // https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
   document.getElementById("defaultOpen").click();
+  var myIframe = document.getElementById(article_iframe);
+  resizeIframe(myIframe)
+  
 });
 
 
