@@ -144,14 +144,14 @@ const sidebarEl2 = `
 
 const basic_info = `
         <meta charset="utf-8">
-        <meta name="viewport" content="width=1000; user-scalable=0;" />
-        
-        <link rel="icon" href="${nesting}/images/logo.png">
-        <link rel="icon" type="image/png" href="/my-favicon/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="/my-favicon/favicon.svg" />
-        <link rel="shortcut icon" href="/my-favicon/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/my-favicon/apple-touch-icon.png" />
-        <link rel="manifest" href="/my-favicon/site.webmanifest" />
+        <meta name="viewport" content="width=device-width"/>
+
+        <link rel="icon" type="image/png" href="/my-favicon/favicon-96x96.png?v=20260629" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/my-favicon/favicon.svg?v=20260629" />
+        <link rel="shortcut icon" href="/my-favicon/favicon.ico?v=20260629" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/my-favicon/apple-touch-icon.png?v=20260629" />
+        <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+        <link rel="manifest" href="/my-favicon/site.webmanifest?v=20260629" />
 `;
 
 // icons generated with https://realfavicongenerator.net/
@@ -160,3 +160,5 @@ const css_links = `
               
         <link href="${nesting}/pagefind/pagefind-component-ui.css" rel="stylesheet">
 `;
+
+// <link rel="icon" href="${nesting}/images/logo.png"></link>
